@@ -1,26 +1,62 @@
-.App {
+
+.welcome {
+  padding-top: 150px;
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 500%;
   color: white;
+  font-family: Comic Sans MS;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar {
+  position: fixed;
+  padding: 2%;
+  width: 100%;
+  background-color: #F77CAD;
+  text-align: left;
+  font-family: Comic Sans MS;
+  color: white;
+  text-shadow: 2px 2px rgb(218, 63, 125);
+}
+
+.navlinks {
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 2px rgb(218, 63, 125);;
+}
+
+.body {
+  color: white;
+  text-shadow: 2px 2px rgb(218, 63, 125);
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 1000px;
+  width: 100%;
+  height: 100%;
+  font-family: Comic Sans MS;
+  background: url('https://i.pinimg.com/originals/90/07/6d/90076d8d24de95cc846030cfec20ac6f.gif') no-repeat center center fixed;;
+  background-size: cover;
+}
+
+.button {
+  border-radius: 10px;
+  padding: .5%;
+  background-color: #F77CAD;
+  color: white;
+  text-shadow: 2px 2px rgb(218, 63, 125);
+  font-family: Comic Sans MS;
+  margin: 1%;
+}
+
+.input {
+  text-align: center;
+  border-radius: 10px;
+  font-family: Comic Sans MS;
+  color: #F77CAD;
+  margin: 1%;
+  padding: .5%;
 }
 
 @keyframes App-logo-spin {
