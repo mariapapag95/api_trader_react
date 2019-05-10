@@ -1,5 +1,4 @@
-import React,{Component} from 'react';
-import LoginInput from './LoginInput'
+import React, {Component} from 'react';
 
 const url = `http://127.0.0.1:5000`
 
@@ -16,23 +15,16 @@ class Login extends Component {
     notEmpty() {
         return this.state.username.length > 0 && this.state.password.length > 0;
     }
-
+ 
     handleChange = event => {
         this.setState({
           [event.target.id]: event.target.value
         });
     }
-    
-    handleSubmit = event => {
+   
+    handleSubmit = async event => {
         event.preventDefault();
     }
-
-    /*
-    changeState = onclick => {
-        this.setState ({username: document.getElementById('username'), 
-                        password: document.getElementById('password')})
-    }
-    */
 
     login = (username,password) => {
         const endpoint = url+`/api/get_api_key`
@@ -51,7 +43,7 @@ class Login extends Component {
 
     render () {
         return (
-            <div className="Login">
+            <div>
             <form onSubmit={this.handleSubmit}>
                 <input
                   autoFocus
@@ -74,7 +66,9 @@ class Login extends Component {
               <button
                 className = "button" 
                 disabled={!this.notEmpty()}
-                onClick={this.login}
+                onClick={()=>{
+                    this.login(this.state.username, this.state.password)
+                }}
                 type="submit">
                 Enter
               </button>

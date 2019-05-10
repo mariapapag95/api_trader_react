@@ -1,7 +1,6 @@
 
 .welcome {
-  padding-top: 150px;
-  text-align: center;
+  padding-top: 5%;
   font-size: 500%;
   color: white;
   font-family: Comic Sans MS;
@@ -9,22 +8,26 @@
 
 .navbar {
   position: fixed;
-  padding: 2%;
+  padding: 1%;
   width: 100%;
   background-color: #F77CAD;
-  text-align: left;
+  text-align: center;
   font-family: Comic Sans MS;
   color: white;
   text-shadow: 2px 2px rgb(218, 63, 125);
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .navlinks {
   text-align: center;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
   color: white;
   text-decoration: none;
-  text-shadow: 2px 2px rgb(218, 63, 125);;
+  text-shadow: 2px 2px rgb(218, 63, 125);
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .body {
@@ -36,7 +39,7 @@
   width: 100%;
   height: 100%;
   font-family: Comic Sans MS;
-  background: url('https://i.pinimg.com/originals/90/07/6d/90076d8d24de95cc846030cfec20ac6f.gif') no-repeat center center fixed;;
+  background: url('https://i.pinimg.com/originals/90/07/6d/90076d8d24de95cc846030cfec20ac6f.gif') no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -57,6 +60,40 @@
   color: #F77CAD;
   margin: 1%;
   padding: .5%;
+}
+
+.table {
+  border-radius: 10px;
+  margin-left: 20%;
+  padding: 2%;
+  width: 60%;
+  background-color: rgb(255, 246, 246, 0.8);
+  color: #F77CAD;
+  text-shadow: .5px .5px #F77CAD;
+  text-align: center;
+}
+
+.chart {
+  background-color: white (0.6);
+  text-shadow: 2px 2px rgb(218, 63, 125);
+  font-family: Comic Sans MS;
+  font-size: small;
+  padding: 2%;
+  position: center;
+  border-radius: 10px;
+}
+
+.highlight {
+  background-image: url(https://thumbs.gfycat.com/ImmaterialTiredLeafcutterant-max-1mb.gif); 
+  height: 400px; 
+  width: 500px;
+  margin: auto;
+  font-size: 500%;
+}
+
+.span {
+  display: inline-block;
+  vertical-align: middle; 
 }
 
 @keyframes App-logo-spin {
