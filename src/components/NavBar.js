@@ -11,6 +11,7 @@ function NavBar(props) {
               <Link className="navlinks" to = '/holdings'>HOLDINGS</Link>
               <Link className="navlinks" to = '/trades'>TRADES</Link>
               <Link className="navlinks" to = '/updatebalance'>UPDATE BALANCE</Link>
+              <Link className="navlinks" to = '/logout'>LOGOUT</Link>
             </div>
         )
     }

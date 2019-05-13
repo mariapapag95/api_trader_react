@@ -1,6 +1,5 @@
 
 import React, {Component} from 'react';
-import {BrowserRouter} from 'react-router-dom';
 import NavBar from './components/NavBar'
 import Routes from './components/Routes'
 import './App.css';
@@ -25,7 +24,7 @@ class App extends Component{
       userHasAuthenticated: this.userHasAuthenticated
     };
     return (
-      <BrowserRouter>
+      
       <div>
         <div>
           <NavBar/>
@@ -34,7 +33,7 @@ class App extends Component{
             <Routes childProps={childProps} />
           </div>
       </div>
-      </BrowserRouter>
+
     )
   }
 }

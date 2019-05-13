@@ -48,7 +48,7 @@ class Sell extends Component {
         })
         promise.then (blob => blob.json()).then(json => {
             this.setState({'price':json.price})
-            this.setState({'sellPrice':((this.state.volume) * (this.state.price))})  
+            this.setState({'sellPrice':(Number(this.state.amount) * Number(this.state.price))})  
         })
     }
 

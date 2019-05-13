@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Chart from 'react-apexcharts'
 
 class StockChart extends Component {
-    
+
   state = {
     ticker: '',
     chart: null
@@ -45,7 +45,11 @@ class StockChart extends Component {
                       series={this.state.chart.series}
                       type='line'/>)
     }
-    return <div >{chart}</div>
+    return <div className = "graph-container">
+            <div>
+            {chart}
+            </div>
+            </div>
   }
 }
 

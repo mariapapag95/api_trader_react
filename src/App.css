@@ -1,6 +1,5 @@
 
 .welcome {
-  padding-top: 5%;
   font-size: 500%;
   color: white;
   font-family: Comic Sans MS;
@@ -51,6 +50,7 @@
   text-shadow: 2px 2px rgb(218, 63, 125);
   font-family: Comic Sans MS;
   margin: 1%;
+  text-decoration: none;
 }
 
 .input {
@@ -94,6 +94,15 @@
 .span {
   display: inline-block;
   vertical-align: middle; 
+}
+
+.graph-container {
+  margin-right: 15%;
+  margin-left: 15%;
+  width: 70%;
+  height: 70%;
+  background-color: white (0.6);
+  color: white;
 }
 
 @keyframes App-logo-spin {

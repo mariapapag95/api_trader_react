@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Redirect } from 'react-router'
 
 const url = `http://127.0.0.1:5000`
 
@@ -8,7 +9,8 @@ class Login extends Component {
         super(props);
             this.state = {
                 username:'',
-                password:''
+                password:'',
+                redirect: false
             }
     }
 
@@ -38,10 +40,14 @@ class Login extends Component {
         promise.then (blob => blob.json()).then(json => {
           window.sessionStorage.setItem('api_key',json.api_key)
           window.sessionStorage.setItem('username',json.username)
-        })
+        }).then(() => this.setState({ redirect: true }))
       }
 
     render () {
+      const { redirect } = this.state;
+     if (redirect) {
+       return <Redirect to='/'/>;
+     }
         return (
             <div>
             <form onSubmit={this.handleSubmit}>
